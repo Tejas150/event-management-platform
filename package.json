@@ -1,0 +1,50 @@
+{
+  "name": "event-management-platform",
+  "version": "1.0.0",
+  "description": "Backend system for a virtual event management platform featuring user authentication, event scheduling, and participant management, built with Node.js, Express.js, and MongoDB.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --coverage",
+    "dev": "nodemon -r dotenv/config server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tejas150/event-management-platform.git"
+  },
+  "collectCoverage": true,
+  "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/**/*.test.js"],
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["text", "lcov", "html"],
+  "coverageThreshold": {
+    "global": {
+      "statements": 90,
+      "branches": 90,
+      "functions": 90,
+      "lines": 90
+    }
+  },
+  "author": "Tejas150",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Tejas150/event-management-platform/issues"
+  },
+  "homepage": "https://github.com/Tejas150/event-management-platform#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "celebrate": "^15.0.3",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "http-errors": "^2.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.9.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^9.15.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
+  }
+}
