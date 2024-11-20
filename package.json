@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --detectOpenHandles --coverage",
-    "dev": "nodemon -r dotenv/config server.js"
+    "dev": "nodemon -r dotenv/config server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
