@@ -78,6 +78,36 @@ This is an Event Management API built using **Node.js** and **Express**. The API
 - `DELETE /:id` - Delete an event (Only accessible by organizers)
   - Path parameter: `id` (Event ID)
 
+## Current Test Coverage
+
+File                                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------------------|---------|----------|---------|---------|-------------------
+All files                              |   92.55 |    68.18 |     100 |   92.55 |                   
+ event-management-platform             |     100 |      100 |     100 |     100 |                   
+  app.js                               |     100 |      100 |     100 |     100 |                   
+ event-management-platform/config      |     100 |     87.5 |     100 |     100 |                   
+  env.js                               |     100 |     87.5 |     100 |     100 | 5                 
+ event-management-platform/controllers |   93.75 |      100 |     100 |   93.75 |                   
+  authController.js                    |     100 |      100 |     100 |     100 |                   
+  eventController.js                   |   91.66 |      100 |     100 |   91.66 | 13,36,45          
+ event-management-platform/middlewares |   84.31 |       50 |     100 |   84.31 |                   
+  authenticate.js                      |   82.35 |       50 |     100 |   82.35 | 10,16,22          
+  authorizeRole.js                     |      80 |       50 |     100 |      80 | 12,16             
+  errorHandler.js                      |      75 |       50 |     100 |      75 | 11-12,21          
+  requestLogger.js                     |     100 |      100 |     100 |     100 |                   
+  validateRequest.js                   |     100 |      100 |     100 |     100 |                   
+ event-management-platform/models      |     100 |      100 |     100 |     100 |                   
+  event.js                             |     100 |      100 |     100 |     100 |                   
+ event-management-platform/routes      |     100 |      100 |     100 |     100 |                   
+  authRoute.js                         |     100 |      100 |     100 |     100 |                   
+  eventRoute.js                        |     100 |      100 |     100 |     100 |                   
+ event-management-platform/services    |   91.93 |    77.27 |     100 |   91.93 |                   
+  authService.js                       |     100 |      100 |     100 |     100 |                   
+  eventService.js                      |   86.84 |    68.75 |     100 |   86.84 | 15,19,43,51,66    
+ event-management-platform/utils       |     100 |       25 |     100 |     100 |                   
+  apiResponse.js                       |     100 |       25 |     100 |     100 | 9-37              
+  logger.js                            |     100 |      100 |     100 |     100 |                   
+
 ## Setup Instructions
 
 ### Prerequisites
